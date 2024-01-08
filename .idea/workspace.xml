@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="910722a6-9d3f-46b5-b3f9-826e340a8a06" name="Changes" comment="udpate project ver 2.0" />
+    <list default="true" id="910722a6-9d3f-46b5-b3f9-826e340a8a06" name="Changes" comment="udpate project ver 2.0">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -155,6 +157,7 @@
       <workItem from="1704290911280" duration="7121000" />
       <workItem from="1704351434782" duration="16017000" />
       <workItem from="1704631149774" duration="16828000" />
+      <workItem from="1704689621306" duration="1438000" />
     </task>
     <task id="LOCAL-00001" summary="udpate project">
       <created>1704641456141</created>
