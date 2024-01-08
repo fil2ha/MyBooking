@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+    {% block title %}Hotels{% endblock %}
+    {% block content %}
+<div class="wrapper">
+        {% for hotel in hotels%}
+
+    <div class="hotels">
+        <img src="{{hotel.photos}}">
+        <p><a style="text-decoration: none; color: #003b95;" href="{% url 'view_rooms' hotel.id  %}">{{hotel.name}}</a></p>
+            <p>Адрес - {{hotel.location}} </p>
+            <p>Рейтинг - {{hotel.rating}}</p>
+            <p><a style="text-decoration: none;
+            padding: 5px; background: #003b95;
+            color: white;" href="{% url 'view_rooms' hotel.id  %}">Выбрать</a></p>
+    </div>
+
+
+        {% endfor %}
+</div>
+    {% endblock %}
+
+

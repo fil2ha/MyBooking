@@ -1,0 +1,2 @@
+global start_date
+global end_date

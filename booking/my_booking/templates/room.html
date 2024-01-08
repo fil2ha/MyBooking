@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+    {% block title %}free rooms{% endblock %}
+    {% block content %}
+<div class="form_date">
+         <form class="date" method="POST">
+        {% csrf_token %}
+        {{form.non_field_errors }}
+        {{ form.as_table }}
+        <input class="reg_button" type="submit" value="Выбрать">
+ </form>
+    </div>
+
+<div class="wrapper">
+{% for room in rooms%}
+    <div class="rooms">
+        <img src="{{room.photos}}">
+        <h3>{{room.room_type}}</a></h3>
+        <h3>Цена за ночь - {{room.price_pre_night}} $</h3>
+    {% if request.user.is_authenticated %}
+    <a style="text-decoration: none;
+            padding: 5px; background: #003b95;
+            color: white;" href="{% url 'view_room' room.id  %}">Забронировать</a>
+    {% else %}
+    <a style="text-decoration: none;
+            padding: 5px; background: #003b95;
+            color: white;" href="{% url 'login' %}">Войти</a>
+    {% endif %}
+        </div>
+{% endfor %}
+    </div>
+
+<h1 style="width: 100%; text-align: center; color: white; background:#003b95">&nbsp;&nbsp;Комментарии пользователей об отеле:</h1>
+<div class="wrapper_review">
+{% for rev in review%}
+    <div class="reviews">
+        <h4 style="text-align: left; margin-left: 1px;">{{rev.created_at}} <b>{{rev.user_id}}</b></h4>
+<h5 style="min-width: 150px">{{rev.comment}}</h5>
+            <h4 style="width: 85px; text-align: left; color: white; background:#003b95">&nbsp; рейтинг <b>{{rev.rating}}</b> </h4>
+        </div>
+    {% endfor %}
+    </div>
+
+{% endblock %}

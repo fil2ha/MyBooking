@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+    {% block title %}book room{% endblock %}
+    {% block content %}
+<div class="wrapper">
+<form  method="POST">
+    {% csrf_token %}
+    {% for room in room%}
+        <div class="rooms_det">
+            <img src="{{room.photos}}">
+            <h3>{{room.room_type}}</h3>
+            <h3>{{room.discription}}</h3>
+            <h3>Стоимость аренды - {{total_price}} $</h3>
+            <input class="reg_button" type="submit" value="Подтвердить бронирование">
+        </div>
+    </form>
+</div>
+{% endfor %}
+{% endblock %}

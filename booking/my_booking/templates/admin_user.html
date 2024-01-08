@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+    {% block title %}Admin User{% endblock %}
+    {% block content %}
+        <p class="admin_menu" ><a  href="{% url 'show_hotels' %}">Отели</a>
+        <a  href="{% url 'show_rooms'  %}">Комнаты</a>
+        <a  href="{% url 'show_booking'  %}">Брони</a>
+        <a href="{% url 'show_users' %}">Пользователи</a></p>
+
+
+<div class="wrapper_admin">
+        {% for user in users%}
+    <div class="user_admin">
+        <p>{{user.username}}</p>
+        <p>{{user.email}} </p>
+        <p><a style="text-decoration: none;
+            padding: 5px; background: #003b95;
+            color: white;" href="{% url 'update_user_admin' user.id  %}">Редактировать</a></p>
+    </div>
+        {% endfor %}
+</div>
+    {% endblock %}

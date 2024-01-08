@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+    {% block title %}Admin Hotel{% endblock %}
+    {% block content %}
+        <p class="admin_menu" ><a  href="{% url 'show_hotels' %}">Отели</a>
+        <a  href="{% url 'show_rooms'  %}">Комнаты</a>
+        <a  href="{% url 'show_booking'  %}">Брони</a>
+        <a href="{% url 'show_users' %}">Пользователи</a></p>
+        <br>
+        <p class="admin_menu"><a href="{% url 'create_hotel'  %}">Создать отель</a></p>
+
+<div class="wrapper_admin">
+        {% for hotel in hotels%}
+    <div class="hotel_admin">
+        <img src="{{hotel.photos}}">
+        <p>{{hotel.name}}</p>
+        <p>{{hotel.location}} </p>
+        <p>{{hotel.rating}} </p>
+        <p><a style="text-decoration: none;
+            padding: 5px; background: #003b95;
+            color: white;" href="{% url 'update_hotel' hotel.id %}">Редактировать</a></p>
+    </div>
+        {% endfor %}
+</div>
+    {% endblock %}

@@ -1,0 +1,270 @@
+.main_menu {
+    height: 70px;
+    background-color: #003b95;
+    margin: 0 0 20px 0;}
+
+.header_menu {
+    width: 100%;
+    padding-top: 20px;
+    text-align: right;
+    padding-right: 15px;
+    font-size: 20px;
+}
+.header_menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.h1_form {
+    font-size: 20px;
+    margin: 0 0 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #003b95;
+}
+.form_reg {
+    width: 250px;
+    margin: 20px auto 0 auto;
+    padding: 10px;
+    background: #ffffff;
+    box-shadow: 5px 5px 10px #003b95;
+}
+input.form-input  {
+    width: 230px;
+    display: flex;
+    border: none;
+    border-bottom: 1px solid #003b95;
+    font-size: 16px;
+    border-bottom: 1px solid #003b95
+}
+
+input.reg_button {
+    background: #003b95;
+    font-size: 16px;
+    color: white;
+    padding: 5px;
+    border: 1px solid #003b95;
+    border-radius: 4px;
+}
+.hotels {
+    text-align: center;
+    width: 300px;
+    height: 400px;
+    margin: 20px 15px 5px 15px;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 5px 5px 10px #003b95;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-x: auto;
+}
+
+ .hotels img {
+     width: 300px;
+     height: 250px;
+ }
+
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.wrapper_review {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    overflow-x: revert;
+}
+
+
+
+.rooms {
+    text-align: center;
+    width: 300px;
+    height: 400px;
+    margin: 20px 15px 10px 15px;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 5px 5px 10px #003b95;
+}
+
+ .rooms img {
+     width: 300px;
+     height: 250px;
+
+ }
+
+.reviews {
+    text-align: left;
+    min-width: 150px;
+    min-height: 50px;
+    justify-content: center;
+    margin: 20px 10px 10px 10px;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 5px 5px 10px #003b95;
+}
+
+.form_date {
+    min-width: 250px;
+    margin: 10px auto 0 auto;
+    padding: 10px;
+    background: #ffffff;
+    box-shadow: 5px 5px 10px #003b95;
+}
+
+.date {
+    text-align: center;
+    font-size: 16px;
+}
+
+.rooms_det {
+    text-align: center;
+    width: 350px;
+    height: 500px;
+    margin: 20px 15px 10px 15px;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 5px 5px 10px #003b95;
+}
+ .rooms_det img {
+     width: 350px;
+     height: 250px;
+
+ }
+
+ .rev{
+     text-align: center;
+     width: 350px;
+     height: 500px;
+     margin: 20px 15px 10px 15px;
+     padding: 10px;
+     background: #fff;
+     box-shadow: 5px 5px 10px #003b95;
+ }
+ textarea {
+     max-height: 300px;
+     max-width: 300px;
+     min-width: 300px;
+     min-height: 300px;
+     font-size: 16px;
+
+ }
+ .user_data {
+     text-align: center;
+     width: 350px;
+     height: 150px;
+     margin: 20px 15px 10px 15px;
+     padding: 10px;
+     border: none;
+     background: #fff;
+     box-shadow: 5px 5px 10px #003b95;
+ }
+.booking_data  {
+     text-align: center;
+     width: 350px;
+     height: 170px;
+     margin: 20px 15px 10px 15px;
+     padding: 10px;
+     border: none;
+     background: #fff;
+     box-shadow: 5px 5px 10px #003b95;
+ }
+
+.wrapper_admin {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-x: revert;
+}
+.hotel_admin  {
+    text-align: center;
+    width: 170px;
+    height: 300px;
+    margin: 20px 15px 5px 15px;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 5px 5px 10px #003b95;
+}
+.hotel_admin img {
+     width: 175px;
+     height: 150px;
+}
+.admin_menu {
+    text-align: center;
+}
+
+.admin_menu a {
+    text-decoration: none;
+    padding: 5px; background: #003b95;
+    color: white;"
+}
+
+.hotel_data  {
+     word-wrap: break-word;
+     text-align: center;
+     width: 350px;
+     height: 550px;
+     margin: 20px 15px 10px 15px;
+     padding: 10px;
+     border: none;
+     background: #fff;
+     box-shadow: 5px 5px 10px #003b95;
+}
+.hotel_data textarea {
+    max-height: 250px;
+    max-width: 300px;
+    min-height: 250px;
+    min-width: 300px;
+
+}
+
+.room_data  {
+     text-align: center;
+     width: 350px;
+     min-height: 550px;
+     margin: 20px 15px 10px 15px;
+     padding: 10px;
+     border: none;
+     background: #fff;
+     box-shadow: 5px 5px 10px #003b95;
+}
+
+.room_data textarea {
+    max-height: 110px;
+    max-width: 300px;
+    min-height: 110px;
+    min-width: 300px;
+}
+.book_admin  {
+    text-align: center;
+    width: 170px;
+    height: 190px;
+    margin: 20px 15px 5px 15px;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 5px 5px 10px #003b95;
+}
+.user_admin  {
+    text-align: center;
+    width: 170px;
+    height: 120px;
+    margin: 20px 15px 5px 15px;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 5px 5px 10px #003b95;
+}
+
+.user_data {
+    word-wrap: break-word;
+    text-align: center;
+    width: 350px;
+    height: 170px;
+    margin: 20px 15px 10px 15px;
+    padding: 10px;
+    border: none;
+    background: #fff;
+    box-shadow: 5px 5px 10px #003b95;
+}

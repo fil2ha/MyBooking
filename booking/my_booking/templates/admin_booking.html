@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+    {% block title %}Admin Booking{% endblock %}
+    {% block content %}
+        <p class="admin_menu" ><a  href="{% url 'show_hotels' %}">Отели</a>
+        <a  href="{% url 'show_rooms'  %}">Комнаты</a>
+        <a  href="{% url 'show_booking'  %}">Брони</a>
+        <a href="{% url 'show_users' %}">Пользователи</a></p>
+
+<div class="wrapper_admin">
+        {% for book in booking%}
+    <div class="book_admin">
+        <p>{{book.user_id}}</p>
+        <p>{{book.room_id.hotel_id}} </p>
+        <p>{{book.room_id}} </p>
+        <p>{{book.check_in_date}}</p>
+        <p>{{book.check_out_date}}</p>
+    </div>
+        {% endfor %}
+</div>
+    {% endblock %}

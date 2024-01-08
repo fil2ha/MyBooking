@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+    {% block title %}Login{% endblock %}
+    {% block content %}
+<div class="form_reg">
+    <h1 class="h1_form">Форма авторизации</h1>
+     <form  method="POST">
+         {% csrf_token %}
+         {{form.non_field_errors }}
+         {{ form.as_p }}
+        <input class="reg_button" type="submit" value="Войти">
+    </form>
+</div>
+    {% endblock %}

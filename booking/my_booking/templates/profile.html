@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+    {% block title %}profile{% endblock %}
+    {% block content %}
+<div>
+    <h3>{{user.username}} |
+    <a style="text-decoration: none;
+    padding: 5px; background: #003b95;
+    color: white;" href="{% url 'update_user' user.id %}">Редактировать</a></h3>
+</div>
+    <div class="wrapper">
+        {% for book in bookings%}
+        <div class="reviews">
+            <p>{{book.room_id.hotel_id}}</p>
+            <p>{{book.room_id}}</p>
+            <p>Дата заезда - {{book.check_in_date}}</p>
+            <p>Дата выезда - {{book.check_out_date}}</p>
+                {% if day_review > book.check_out_date|date:"Y-m-d" %}
+                    <p><a style="text-decoration: none;
+                    padding: 5px; background: #003b95;
+                    color: white;" href="{% url 'post_review' book.room_id.hotel_id.id  %}">Оставить отзыв</a></p>
+                {% else %}
+                    <p><a style="text-decoration: none;
+                    padding: 5px; background: #003b95;
+                    color: white;" href="{% url 'update_booking' book.id %}">Редактировать</a></p>
+                {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+
+
+{% endblock %}

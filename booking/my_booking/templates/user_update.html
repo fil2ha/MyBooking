@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+    {% block title %}Update Hotel{% endblock %}
+    {% block content %}
+<div class="wrapper">
+    <form class="user_data" method="POST">
+        {% csrf_token %}
+        {{form.non_field_errors }}
+        {{ form.as_p }}
+        <input class="reg_button" type="submit" value="Обновить">
+    </form>
+</div>
+    {% endblock %}
