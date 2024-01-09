@@ -43,8 +43,8 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;user-profile&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/Booking-main&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/fujitsu/PycharmProjects/MyBooking&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
   <component name="Push.Settings">
@@ -157,7 +157,12 @@
       <workItem from="1704290911280" duration="7121000" />
       <workItem from="1704351434782" duration="16017000" />
       <workItem from="1704631149774" duration="16828000" />
-      <workItem from="1704689621306" duration="1438000" />
+      <workItem from="1704689621306" duration="3206000" />
+      <workItem from="1704700991412" duration="802000" />
+      <workItem from="1704798695657" duration="1466000" />
+      <workItem from="1704804447880" duration="19000" />
+      <workItem from="1704804480884" duration="115000" />
+      <workItem from="1704810966327" duration="327000" />
     </task>
     <task id="LOCAL-00001" summary="udpate project">
       <created>1704641456141</created>
