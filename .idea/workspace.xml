@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="910722a6-9d3f-46b5-b3f9-826e340a8a06" name="Changes" comment="update api views">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="910722a6-9d3f-46b5-b3f9-826e340a8a06" name="Changes" comment="update project" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -160,7 +158,7 @@
       <workItem from="1704804447880" duration="19000" />
       <workItem from="1704804480884" duration="115000" />
       <workItem from="1704810966327" duration="7239000" />
-      <workItem from="1704889848245" duration="671000" />
+      <workItem from="1704889848245" duration="1031000" />
     </task>
     <task id="LOCAL-00001" summary="udpate project">
       <created>1704641456141</created>
@@ -183,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1704811313870</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update project">
+      <created>1704890548770</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1704890548770</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,7 +209,8 @@
     <MESSAGE value="udpate project" />
     <MESSAGE value="udpate project ver 2.0" />
     <MESSAGE value="update api views" />
-    <option name="LAST_COMMIT_MESSAGE" value="update api views" />
+    <MESSAGE value="update project" />
+    <option name="LAST_COMMIT_MESSAGE" value="update project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
