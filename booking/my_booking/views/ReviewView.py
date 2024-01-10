@@ -8,14 +8,11 @@ from my_booking.forms.AddReview import AddReview
 from my_booking.serializers.ReviewSerializer import ReviewSerializer
 
 
-class ReviewList(viewsets.mixins.CreateModelMixin,
-                 mixins.RetrieveModelMixin,
-                 mixins.UpdateModelMixin,
-                 mixins.ListModelMixin,
-                 GenericViewSet):
+class ReviewList(viewsets.ModelViewSet):
     """API Review"""
     queryset = Review.objects.all()
     serializer_class = ReviewSerializer
+    http_method_names = ('get', 'post', 'put', 'patch')
     permission_classes = (IsAuthenticatedOrReadOnly,)
 
 

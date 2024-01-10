@@ -6,14 +6,11 @@ from my_booking.model.HotelModel import Hotel
 from my_booking.serializers.HotelSerializer import HotelSerializer
 
 
-class HotelList(viewsets.mixins.CreateModelMixin,
-                mixins.RetrieveModelMixin,
-                mixins.UpdateModelMixin,
-                mixins.ListModelMixin,
-                GenericViewSet):
+class HotelList(viewsets.ModelViewSet):
     """API hotels"""
     queryset = Hotel.objects.all()
     serializer_class = HotelSerializer
+    http_method_names = ('get', 'post', 'put', 'patch')
     permission_classes = (IsAuthenticatedOrReadOnly, )
 
 

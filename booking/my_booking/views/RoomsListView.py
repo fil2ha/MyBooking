@@ -10,14 +10,11 @@ from my_booking.model.BookingModel import Booking
 from my_booking.serializers.RoomsSerializer import RoomSerializer
 
 
-class RoomList(viewsets.mixins.CreateModelMixin,
-               mixins.RetrieveModelMixin,
-               mixins.UpdateModelMixin,
-               mixins.ListModelMixin,
-               GenericViewSet):
+class RoomList(viewsets.ModelViewSet):
     """API Rooms"""
     queryset = Room.objects.all()
     serializer_class = RoomSerializer
+    http_method_names = ('get', 'post', 'put', 'patch')
     permission_classes = (IsAuthenticatedOrReadOnly,)
 
 

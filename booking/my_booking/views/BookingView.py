@@ -5,12 +5,9 @@ from my_booking.model.BookingModel import Booking
 from my_booking.serializers.BookingSerializer import BookingSerializer
 
 
-class BookingList(viewsets.mixins.CreateModelMixin,
-                  mixins.RetrieveModelMixin,
-                  mixins.UpdateModelMixin,
-                  mixins.ListModelMixin,
-                  GenericViewSet):
+class BookingList(viewsets.ModelViewSet):
     """API Booking"""
     queryset = Booking.objects.all()
     serializer_class = BookingSerializer
+    http_method_names = ('get', 'post', 'put', 'patch')
     permission_classes = (IsAuthenticatedOrReadOnly,)
